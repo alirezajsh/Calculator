@@ -181,6 +181,10 @@ function unknownOperation(num1, num2, operation){
         case '-':
             return num1-num2;
         case '÷':
+            if(num2 == 0){
+                alert("It's impossible to divide by 0");
+                return;
+            }
             return num1/num2;
         case '×':
             return num1*num2;
